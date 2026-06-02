@@ -1,3 +1,5 @@
 build/
 .neogit/
 .vscode/
+neogit.exe
+desktop.ini

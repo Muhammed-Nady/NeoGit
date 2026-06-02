@@ -54,6 +54,19 @@ int main(int argc, char *argv[])
         }
         handleCommit(argv[2]);
     }
+    else if (command == "log")
+    {
+        handleLog();
+    }
+    else if (command == "checkout")
+    {
+        if (argc < 3)
+        {
+            cout << "Usage: neogit checkout <commit-hash>" << endl;
+            return 1;
+        }
+        handleCheckout(argv[2]);
+    }
     else
     {
         cout << "Unknown command: " << command << endl;
